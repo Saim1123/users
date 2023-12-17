@@ -1,8 +1,45 @@
 main {
   width: 70%;
-  height: 600px;
+  height: 480px;
   background: whitesmoke;
   border-radius: 12px;
-  margin: 6rem auto;
-  padding: 40px;
+  margin: 1rem auto;
+  padding: 30px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-search {
+  width: 60%;
+}
+
+.user-search input {
+  width: 100%;
+}
+
+.clear-users button,
+.user-search input {
+  padding: 0.6rem;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clear-users button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.clear-users button:hover {
+  background-color: rgba(30, 143, 255, 0.776);
+  cursor: pointer;
 }
