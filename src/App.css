@@ -43,3 +43,28 @@ h1 {
   background-color: rgba(30, 143, 255, 0.776);
   cursor: pointer;
 }
+
+/* users */
+
+.user {
+  width: 220px;
+  border: 1px solid black;
+}
+
+.user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.user-header {
+  display: flex;
+}
+
+.user-header h3 {
+  font-size: 14px;
+}
+
+.user-skills {
+  font-size: 10px;
+}
