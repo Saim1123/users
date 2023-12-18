@@ -1,13 +1,23 @@
-import React from "react";
-
-const SearchPerson = () => {
+const SearchPerson = ({ person, setUsers, setEmpty, handleChange }) => {
   return (
     <div className="search-header">
       <section className="user-search">
-        <input type="search" placeholder="search users" />
+        <input
+          value={person}
+          onChange={(e) => handleChange(e)}
+          type="search"
+          placeholder="search users"
+        />
       </section>
       <section className="clear-users">
-        <button>Clear All</button>
+        <button
+          onClick={() => {
+            setUsers([]);
+            setEmpty(true);
+          }}
+        >
+          Clear All
+        </button>
       </section>
     </div>
   );

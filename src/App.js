@@ -6,11 +6,30 @@ import UsersList from "./components/UsersList";
 
 function App() {
   const [users, setUsers] = useState(data);
+  const [person, setPerson] = useState("");
+  const [empty, setEmpty] = useState(false);
+
+  const handleChange = (event) => {
+    setPerson(event.target.value);
+  };
   return (
     <main>
       <h1>Users</h1>
-      <SearchPerson />
-      <UsersList users={users} />
+      <SearchPerson
+        setEmpty={setEmpty}
+        handleChange={handleChange}
+        person={person}
+        setUsers={setUsers}
+      />
+      {empty ? (
+        <h2>No Users</h2>
+      ) : (
+        <UsersList
+          users={users.filter((user) =>
+            user.name.toLowerCase().includes(person)
+          )}
+        />
+      )}
     </main>
   );
 }
