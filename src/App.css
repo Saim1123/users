@@ -46,25 +46,65 @@ h1 {
 
 /* users */
 
+.users-list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .user {
-  width: 220px;
-  border: 1px solid black;
+  margin-bottom: 12px;
+  width: 260px;
+  height: 120px;
+  padding: 18px 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
 }
 
 .user img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-.user-header {
+.user-img {
   display: flex;
+  align-items: center;
+  width: 50%;
 }
 
-.user-header h3 {
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.user-img h3 {
   font-size: 14px;
 }
 
 .user-skills {
   font-size: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 2px;
+}
+
+ul li {
+  border: 1px solid dodgerblue;
+  color: dodgerblue;
+  padding: 6px;
+  margin-top: 2px;
+  border-radius: 16px;
 }

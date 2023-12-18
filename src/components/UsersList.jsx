@@ -3,7 +3,7 @@ import List from "./List";
 
 const UsersList = ({ users }) => {
   return (
-    <div>
+    <div className="users-list">
       <List users={users} />
     </div>
   );
